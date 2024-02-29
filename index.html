@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- <h1>Hello from HTML !!</h1> -->
+    </div>
+    <!-- <script>
+        const message = document.createElement('h1');
+        message.innerHTML= 'Hello from JavaScript !!';
+        const root = document.getElementById('root');
+        root.appendChild(message)
+    </script> -->
+
+    <!-- all core react properties and features -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <!-- script for connection from react to browser or 
+    connect your DOM to react application-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const message = React.createElement(
+        "h1",
+        { id: "message1", class: "heading1" },
+        "Hello from React"
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(message);
+    </script>
+  </body>
+</html>
